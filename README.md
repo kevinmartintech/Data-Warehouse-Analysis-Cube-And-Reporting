@@ -64,6 +64,7 @@ The process of extracting, transforming, and loading data occurs at this stage. 
 The ETL process can be performed on-premises with SQL Server Integration Services ([SSIS](https://docs.microsoft.com/en-us/sql/integration-services/sql-server-integration-services)), or in Azure with Azure Data Factory ([ADF](https://azure.microsoft.com/en-us/services/data-factory/)), or [Azure Synapse Analytics](https://azure.microsoft.com/en-us/services/synapse-analytics).
 
 SSIS & ADF Hybrid Solution:
+
 ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/882db707-227d-4365-ba5d-5a12cec85ef2)
 
 SSIS packages can also be run in ADF with "lift and shift". Moving your on-premises SSIS workloads to Azure has potential benefits of reduced operational costs, increased high availability and increased scalability.
