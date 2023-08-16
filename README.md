@@ -6,17 +6,48 @@ You might have heard about data warehouses, data lakes, analysis cubes, Power BI
 
 ---
 
-# Transactional Data Store (TDS)
-This is the database that is optimized for transactions giving you fast inserts, updates & deletes of business data. It is used by an application for day-to-day operational tasks. It might contain your sales data, Customer Relationship Management (CRM), Enterprise Resource Planning (ERP), Supply Chain Management (SCM) or another line of business application for your company. 
+# Transactional Data Store (TDS/OLTP)
+This is the Online Transaction Processing (OLTP) database that is optimized for transactions giving you high-volume fast inserts, updates & deletes of business data. It is used by an application for day-to-day operational tasks. It might contain your sales data, Customer Relationship Management (CRM), Enterprise Resource Planning (ERP), Supply Chain Management (SCM) or another line of business application for your company.
 
-The data is normalized which means no duplicate data is stored in the tables. This reduces data redundancy and inconsistency to achieve data integrity.
+Key characteristics of an OLTP database include:
+
+1. **Transaction Management**: These databases excel at managing transactions while ensuring data integrity and consistency. This is achieved through features like atomicity, consistency, isolation, and durability (ACID properties).
+2. **Concurrent Access**: OLTP databases are designed to support multiple users or applications simultaneously, allowing many users to perform transactions concurrently without interfering with one another.
+3. **Normalized Data Structures**: Data in TDS databases is typically organized using normalized structures to minimize redundancy and ensure efficient storage. This can help maintain data integrity but might involve more complex queries to retrieve data.
+4. **Low Latency**: Transactional data store databases prioritize low-latency access to individual records, aiming to minimize response times for transactions.
+5. **Indexing**: These databases often employ indexing techniques to optimize the retrieval of specific records and to facilitate efficient search operations.
+6. **Small Transactions**: Transactions in OLTP databases are usually small-scale operations that involve relatively few records. This is in contrast to OLAP (Online Analytical Processing) databases that focus on complex, analytical queries involving large datasets.
+7. **Data Validation**: TDS databases enforce data validation and integrity constraints to ensure that only valid data is stored.
+8. **Real-time Updates**: OLTP databases provide real-time updates to reflect changes in operational data as transactions occur.
 
 ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/be34bc60-6ab0-4038-afcc-54c3df407a2b)
 
 ---
+# Operational Data Store (ODS)
+An Operational Data Store (ODS) is a type of database or data storage system that is designed to store and manage real-time or near-real-time operational data from various sources within an organization. The primary purpose of an ODS is to provide a centralized repository for data that is used for day-to-day operational activities, reporting, and analysis.
+
+Key characteristics of an ODS include:
+
+1. **Real-time or Near-real-time Data**: It quickly gets the latest data for decisions.
+
+2. **Combined Data**: It puts together data from different places so everyone sees the same info.
+
+3. **Data Changes**: It fixes and organizes data to make sure it's right.
+
+4. **Reports and Answers**: It helps with reports and quick questions about everyday tasks.
+
+5. **Past Data**: It keeps a bit of old data to see trends and changes.
+
+6. **Helps with Work**: It's useful for tasks like dealing with customers, orders, and inventory.
+
+It's important to note that an ODS is distinct from a data warehouse. A data warehouse is designed for long-term storage, aggregation, and analysis of historical data from various sources, typically with a focus on business intelligence and decision support. In contrast, an ODS is oriented towards providing up-to-date information for day-to-day operations.
+
+Overall, an ODS plays a crucial role in ensuring that an organization's operational activities have access to accurate and timely data, which is essential for effective decision-making and efficient business processes.
+
+---
 
 # Data Warehouse (DW)
-This is the database that is optimized for reporting giving you fast reads. The data is denormalized which means there is duplicate data stored in the tables. The duplicated data makes queries for reports and BI (Business Intelligence) visuals performant. The data from the TDS (Transactional Data Store) is processed via ETL (Extract, Transform, Load) into the data warehouse. Data can also be imported from legacy systems via flat files. Data from modern APIs is fast becoming the standard for ingesting data into a data warehouse. Companies need to ensure they have a true data warehouse instead of a dumping ground for data with little modifications.
+This is the database that is optimized for analytical reporting giving you fast reads. The data is denormalized which means there is duplicate data stored in the tables. The duplicated data makes queries for reports and BI (Business Intelligence) visuals performant. The data from the TDS (Transactional Data Store) or ODS (Operational Data Store) is processed via ETL (Extract, Transform, Load) into the data warehouse. Data can also be imported from legacy systems via flat files. Data from modern APIs is fast becoming the standard for ingesting data into a data warehouse. Companies need to ensure they have a true data warehouse instead of a dumping ground for data with little modifications.
 
 Companies need to make good decisions and to make good decisions required good data. The best source for the data is properly designed data warehouse and not a “reporting warehouse” or a “data swamp”.
 
@@ -25,7 +56,6 @@ Dimensions and Facts are created from the ingested data that are used in reporti
 The dimensions and facts can be modeled in a Star or Snowflake schema. The Star Schema has one fact table in the middle surrounded by several associated dimensions tables. The Snowflake Schema adds additional dimensions that relate to another dimension.
 
 Integration tables are for data ingestion. The integration tables are hidden from business users as they are only used for processing.
-
 
 ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/79c494dd-0802-4293-8ad5-13ed59bd2766)
 
