@@ -44,6 +44,8 @@ It's important to note that an ODS is distinct from a data warehouse. A data war
 
 Overall, an ODS plays a crucial role in ensuring that an organization's operational activities have access to accurate and timely data, which is essential for effective decision-making and efficient business processes.
 
+![Operational Data Store (ODS)](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/501f4b3d-249f-4d34-9f4b-4707bd74d205)
+
 ---
 
 # Data Warehouse (DW)
