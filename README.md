@@ -121,6 +121,34 @@ Example of ADF Slowly Changing Dimension (SDC):
 
 ---
 
+# Microsoft Fabric
+
+Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, Real-Time Analytics, and business intelligence (Power BI). It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place.
+
+With Fabric, you don't need to piece together different services from multiple vendors. Instead, you can enjoy a highly integrated, end-to-end, and easy-to-use product that is designed to simplify your analytics needs.
+
+The platform is built on a foundation of Software as a Service (SaaS), which takes simplicity and integration to a whole new level.
+
+![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/cf0d42b8-5fc4-4a4a-9d18-c77e41c6c51b)
+
+
+
+## OneLake and lakehouse - the unification of lakehouses
+The Microsoft Fabric platform unifies the OneLake and lakehouse architecture across the enterprises.
+
+OneLake
+The data lake is the foundation on which all the Fabric services are built. Microsoft Fabric Lake is also known as OneLake. It's built into the Fabric service and provides a unified location to store all organizational data where the experiences operate.
+
+Fabric brings together experiences such as Data Engineering, Data Factory, Data Science, Data Warehouse, Real-Time Analytics, and Power BI onto a shared SaaS foundation. This integration provides the following advantages:
+
+- An extensive range of deeply integrated analytics in the industry.
+- Shared experiences across experiences that are familiar and easy to learn.
+- Developers can easily access and reuse all assets.
+- A unified data lake that allows you to retain the data where it is while using your preferred analytics tools.
+- Centralized administration and governance across all experiences.
+
+---
+
 # Master Data Services (MDS)
 
 Master data represents data about business entities for business transactions. These entities can be parties like individuals, customers, suppliers & employees. Other entities are products, ledgers, or cost centers. The goal is to conform the entities so they can be used across many fact tables in a DW.
