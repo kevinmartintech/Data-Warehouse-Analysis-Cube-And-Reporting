@@ -216,8 +216,8 @@ Business users can access their data anywhere, get notifications, annotate, and 
 
 The screen shot below is displaying the same data from Power BI Report Server on a mobile phone.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/0021407b-4200-4d4c-b64f-ff26eccc9579)
-
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/0021407b-4200-4d4c-b64f-ff26eccc9579)-->
+![Power BI Mobile App](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/a11409f3-ef20-4db2-9cdd-6f2fe7e17271)
 
 
 ---
@@ -228,7 +228,8 @@ Normally there is enough report data that does not fit on one printed page, so t
 
 These report types have parameters that are developed during report authoring that allow the viewer to narrow down the returned data.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/2fb12e4b-016a-4497-a609-5597f6463c5a)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/2fb12e4b-016a-4497-a609-5597f6463c5a) -->
+![Paginated Report](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/fb8685c5-5576-4018-ac50-a9ecbdd2f696)
 
 ---
 
