@@ -21,7 +21,7 @@ Key characteristics of an OLTP database include:
 8. **Real-time Updates**: OLTP databases provide real-time updates to reflect changes in operational data as transactions occur.
 
 ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/be34bc60-6ab0-4038-afcc-54c3df407a2b)
-![image](Images/Transactional Data Store.png)
+
 ---
 # Operational Data Store (ODS)
 An Operational Data Store (ODS) is a type of database or data storage system that is designed to store and manage real-time or near-real-time operational data from various sources within an organization. The primary purpose of an ODS is to provide a centralized repository for data that is used for day-to-day operational activities, reporting, and analysis.
