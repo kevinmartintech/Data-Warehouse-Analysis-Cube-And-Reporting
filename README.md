@@ -45,9 +45,10 @@ It's important to note that an ODS is distinct from a data warehouse. A data war
 
 Overall, an ODS plays a crucial role in ensuring that an organization's operational activities have access to accurate and timely data, which is essential for effective decision-making and efficient business processes.
 
-![Operational Data Store (ODS)](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/501f4b3d-249f-4d34-9f4b-4707bd74d205)
-
+<!-- ![Operational Data Store (ODS)](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/501f4b3d-249f-4d34-9f4b-4707bd74d205) -->
+![Operational Data Store](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/c849fcdf-22ea-4349-add4-4fcea5aded9f)
 ---
+
 
 # Data Warehouse (DW)
 This is the database that is optimized for analytical reporting giving you fast reads. The data is denormalized which means there is duplicate data stored in the tables. The duplicated data makes queries for reports and BI (Business Intelligence) visuals performant. The data from the TDS (Transactional Data Store) or ODS (Operational Data Store) is processed via ETL (Extract, Transform, Load) into the data warehouse. Data can also be imported from legacy systems via flat files. Data from modern APIs is fast becoming the standard for ingesting data into a data warehouse. Companies need to ensure they have a true data warehouse instead of a dumping ground for data with little modifications.
@@ -60,7 +61,8 @@ The dimensions and facts can be modeled in a Star or Snowflake schema. The Star 
 
 Integration tables are for data ingestion. The integration tables are hidden from business users as they are only used for processing.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/79c494dd-0802-4293-8ad5-13ed59bd2766)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/79c494dd-0802-4293-8ad5-13ed59bd2766) -->
+![Data Warehouse](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/88593da9-ba88-40c3-a17d-f878e52e732f)
 
 ---
 
@@ -70,7 +72,8 @@ A data lake is a centralized repository that stores your structured and unstruct
 
 The Data Lakehouse utilizes data structure and data management features on top of the Data Lake that are like what is found in a Data Warehouse.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/6331aff9-a120-41b2-b6b8-f1c233ae0ed8)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/6331aff9-a120-41b2-b6b8-f1c233ae0ed8) -->
+![Data Lake Data Lakehouse](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/6824fb31-bf46-4fba-abcb-c6efefa58542)
 
 ---
 
@@ -78,15 +81,18 @@ The Data Lakehouse utilizes data structure and data management features on top o
 
 Azure Synapse is a unified data analytics platform that performs data integration, data exploration, data warehousing, big data, and machine learning in a single environment.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/3330a6ca-4992-426b-ae62-20ee3fcb2c93)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/3330a6ca-4992-426b-ae62-20ee3fcb2c93)-->
+![Azure Synapse Analytics](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/303a50b4-4ea5-4dd5-904a-fe3e58d2559d)
 
 Azure Synapse Workspace can be used with either a Dedicated SQL Pool or an ad-hoc Serverless SQL Pool. The Dedicated SQL Pool is an Azure Synapse instance.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/2aed1d5c-7100-4914-80c1-ccacdccc0926)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/2aed1d5c-7100-4914-80c1-ccacdccc0926) -->
+![Azure Synapse Analytics Pools](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/2909600b-3e88-41dc-87ea-c03fa9cfd09c)
 
 Now, let’s say we want to edit our Power BI report. We can do this directly in Azure Synapse. Navigate to the Develop Hub blade and under the Power BI workspace Movie Analytics Reporting open Power BI reports. Here, we can see the Power BI report we just published.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/dcf47ef4-1ca4-4bf1-8373-70bd99f927a7)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/dcf47ef4-1ca4-4bf1-8373-70bd99f927a7) -->
+![Azure Synapse Analytics Power BI](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/998e615f-ab30-4db8-8592-21e010ae27b2)
 
 ---
 
@@ -98,7 +104,8 @@ The ETL process can be performed on-premises with SQL Server Integration Service
 
 SSIS & ADF Hybrid Solution:
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/882db707-227d-4365-ba5d-5a12cec85ef2)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/882db707-227d-4365-ba5d-5a12cec85ef2) -->
+![Extract Transform Load ADF](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/6850a48e-1fec-456c-9b3e-5d520b3642e1)
 
 SSIS packages can also be run in ADF with "lift and shift". Moving your on-premises SSIS workloads to Azure has potential benefits of reduced operational costs, increased high availability and increased scalability.
 
@@ -115,10 +122,12 @@ SSIS packages can also be run in ADF with "lift and shift". Moving your on-premi
 - Your data is growing, and you want to pay for your current usage and not future usage
 
 Example of SSIS Slowly Changing Dimension (SDC):
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/35c446c8-373b-483c-b600-a9d2680170d0)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/35c446c8-373b-483c-b600-a9d2680170d0) -->
+![Extract Transform Load ADF SCD](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/e464120a-8d19-4b1a-8140-aba226725939)
 
 Example of ADF Slowly Changing Dimension (SDC):
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/ef57bfd6-0800-4088-994a-2485ad12ac29)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/ef57bfd6-0800-4088-994a-2485ad12ac29) -->
+![Extract Transform Load ADF SCD](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/dcea2d3a-805e-40d0-a6e5-f798d69f82d2)
 
 ---
 
@@ -130,9 +139,8 @@ With Fabric, you don't need to piece together different services from multiple v
 
 The platform is built on a foundation of Software as a Service (SaaS), which takes simplicity and integration to a whole new level.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/cf0d42b8-5fc4-4a4a-9d18-c77e41c6c51b)
-
-
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/cf0d42b8-5fc4-4a4a-9d18-c77e41c6c51b) -->
+![Microsoft Fabric](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/e363283a-fec8-490f-9410-0ecd238d998f)
 
 ## OneLake and lakehouse - the unification of lakehouses
 The Microsoft Fabric platform unifies the OneLake and lakehouse architecture across the enterprises.
@@ -160,11 +168,13 @@ There are a few options to map these entities.
 
 One option is a custom-built mapping web app.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/4d6bd8dd-e4d5-41cf-ba6d-da9f176e5bbb)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/4d6bd8dd-e4d5-41cf-ba6d-da9f176e5bbb) -->
+![Master Data Services Web App](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/d52f1ad7-79e5-4c1b-b55e-36480c389739)
 
 Another option is Master Data Services (MDS) built into SQL Server Enterprise edition ($28k minimum license). Note: [Discontinued Master Data Services Features](https://learn.microsoft.com/en-us/sql/master-data-services/discontinued-master-data-services-features?view=sql-server-ver16) & [Deprecated Master Data Services Features](https://learn.microsoft.com/en-us/sql/master-data-services/deprecated-master-data-services-features?view=sql-server-ver16)
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/215b206b-00bb-482a-95a5-53201f0833f3)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/215b206b-00bb-482a-95a5-53201f0833f3) -->
+![Master Data Services MDS](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/9db06058-c22a-4d97-8663-40e6c53ce073)
 
 **Master Data Management/Service Alternative Options**
 
@@ -178,9 +188,11 @@ Another option is Master Data Services (MDS) built into SQL Server Enterprise ed
 # Analysis Cube (Cube)
 An analysis cube is used to speed up queries with larger amounts of data. A cube is a multi-dimensional dataset that contains dimensions like locations, time, and sales data. If you use a business intelligence tool like Power BI, there is an option to import the data instead of a live query. When the data is imported it will create a cube within Power BI. This makes cubes not always necessary for data analytics for smaller data sets.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/08137670-fcb6-49f3-9dc0-d72a9d9fab5a)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/08137670-fcb6-49f3-9dc0-d72a9d9fab5a) -->
+![Analysis Cube Model](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/3eedcaf8-ef81-4cca-8e09-233295a07302)
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/bab34620-3728-418c-b32b-350f101c3483)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/bab34620-3728-418c-b32b-350f101c3483) -->
+![Analysis Cube Cube](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/22d6953b-4bb9-40de-ad1b-8a1e1a9dba4d)
 
 ---
 
@@ -191,7 +203,8 @@ Power BI (Business Intelligence) is one way to connect to the data warehouse or 
 These visuals have filters and interactive clickable elements in the visual to narrow down the data records. In the visuals below you can click the Midwest Sales Territory and all the other visuals on the page are sliced by that dimension.
 
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/da395d83-551c-41f5-b63a-441947587844)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/da395d83-551c-41f5-b63a-441947587844) -->
+![Power BI](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/ac39535d-125b-452f-8f6a-5f97376e42f0)
 
 ---
 
@@ -225,11 +238,13 @@ Report Builder is a tool for authoring paginated reports for business power user
 
 Business power users design a paginated report that creates a report definition. This report definition specifies what data to retrieve, where to get it, and how to display it. When they run the report, the report processor takes the report definition they have specified, retrieves the data, and combines it with the report layout to generate the report. They can preview their report in Report Builder. Then publish the report to a Reporting Services report server.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/5cd45186-8c80-4b6e-a636-9d500b511caf)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/5cd45186-8c80-4b6e-a636-9d500b511caf) -->
+![Power User Reports](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/c83c1a84-717a-4c55-a76d-d71d8d287d04)
 
 ---
 
 # Excel PivotTable (PivotTable)
 An Excel PivotTable can be used to connect to the data warehouse or analysis cube to calculate, summarize, and analyze data. The PivotTable below is connected to a cube with customized measures in the PivotTable Fields panel on the right.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/d05b1fe6-42bd-42df-a865-212d27590f44)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/d05b1fe6-42bd-42df-a865-212d27590f44) -->
+![Excel PivotTable](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/100ef5f7-88fe-48b3-8a2c-60de745e452d)
