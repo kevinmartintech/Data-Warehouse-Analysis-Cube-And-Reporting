@@ -16,7 +16,7 @@ Key characteristics of an OLTP database include:
 3. **Normalized Data Structures**: Data in TDS databases is typically organized using normalized structures to minimize redundancy and ensure efficient storage. This can help maintain data integrity but might involve more complex queries to retrieve data.
 4. **Low Latency**: Transactional data store databases prioritize low-latency access to individual records, aiming to minimize response times for transactions.
 5. **Indexing**: These databases often employ indexing techniques to optimize the retrieval of specific records and to facilitate efficient search operations.
-6. **Small Transactions**: Transactions in OLTP databases are usually small-scale operations that involve relatively few records. This is in contrast to OLAP (Online Analytical Processing) databases that focus on complex, analytical queries involving large datasets.
+6. **Small Transactions**: Transactions in OLTP databases are usually small-scale operations that involve relatively few records. This contrasts with OLAP (Online Analytical Processing) databases that focus on complex, analytical queries involving large datasets.
 7. **Data Validation**: TDS databases enforce data validation and integrity constraints to ensure that only valid data is stored.
 8. **Real-time Updates**: OLTP databases provide real-time updates to reflect changes in operational data as transactions occur.
 
@@ -53,9 +53,9 @@ Overall, an ODS plays a crucial role in ensuring that an organization's operatio
 # Data Warehouse (DW)
 This is the database that is optimized for analytical reporting giving you fast reads. The data is denormalized which means there is duplicate data stored in the tables. The duplicated data makes queries for reports and BI (Business Intelligence) visuals performant. The data from the TDS (Transactional Data Store) or ODS (Operational Data Store) is processed via ETL (Extract, Transform, Load) into the data warehouse. Data can also be imported from legacy systems via flat files. Data from modern APIs is fast becoming the standard for ingesting data into a data warehouse. Companies need to ensure they have a true data warehouse instead of a dumping ground for data with little modifications.
 
-Companies need to make good decisions and to make good decisions required good data. The best source for the data is properly designed data warehouse and not a “reporting warehouse” or a “data swamp”.
+Companies need to make good decisions and to make good decisions requires good data. The best source for the data is a properly designed data warehouse and not a “reporting warehouse” or a “data swamp”.
 
-Dimensions and Facts are created from the ingested data that are used in reporting. The Fact tables contain record data than can be aggregated (SUM, AVG, MIN, MAX) against. A Fact table has a specific grain that defines the level of detail for the records. The Dimension tables are used to slice the facts that answer the business staff’s data questions.
+Dimensions and Facts are created from the ingested data that are used in reporting. The Fact tables contain record data that can be aggregated (SUM, AVG, MIN, MAX) against. A Fact table has a specific grain that defines the level of detail for the records. The Dimension tables are used to slice the facts that answer the business staff’s data questions.
 
 The dimensions and facts can be modeled in a Star or Snowflake schema. The Star Schema has one fact table in the middle surrounded by several associated dimensions tables. The Snowflake Schema adds additional dimensions that relate to another dimension.
 
@@ -121,11 +121,11 @@ SSIS packages can also be run in ADF with "lift and shift". Moving your on-premi
 - Your ETL activity can be bulk loaded nightly or a few times during the day
 - Your data is growing, and you want to pay for your current usage and not future usage
 
-Example of SSIS Slowly Changing Dimension (SDC):
+Example of SSIS Slowly Changing Dimension (SCD):
 <!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/35c446c8-373b-483c-b600-a9d2680170d0) -->
 ![Extract Transform Load ADF SCD](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/e464120a-8d19-4b1a-8140-aba226725939)
 
-Example of ADF Slowly Changing Dimension (SDC):
+Example of ADF Slowly Changing Dimension (SCD):
 <!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/ef57bfd6-0800-4088-994a-2485ad12ac29) -->
 ![Extract Transform Load ADF SCD](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/dcea2d3a-805e-40d0-a6e5-f798d69f82d2)
 
@@ -198,7 +198,7 @@ An analysis cube is used to speed up queries with larger amounts of data. A cube
 
 # Power BI Visual (Visuals)
 
-Power BI (Business Intelligence) is one way to connect to the data warehouse or analysis cube to display insights that have been discovered in the data. Reports might have a single page with one visual or might have pages full of visuals. BI visuals give you the option to create Key Performance Indicators (PKI) to ensure your company is staying on track with its business goals.
+Power BI (Business Intelligence) is one way to connect to the data warehouse or analysis cube to display insights that have been discovered in the data. Reports might have a single page with one visual or might have pages full of visuals. BI visuals give you the option to create Key Performance Indicators (KPI) to ensure your company is staying on track with its business goals.
 
 These visuals have filters and interactive clickable elements in the visual to narrow down the data records. In the visuals below you can click the Midwest Sales Territory and all the other visuals on the page are sliced by that dimension.
 
@@ -210,11 +210,11 @@ These visuals have filters and interactive clickable elements in the visual to n
 
 # Power BI Mobile App (Power BI Mobile)
 
-Power BI offers a set of mobile apps for iOS, Android, and Windows 10 mobile devices. In the mobile apps, you connect to and interact with your cloud and on-premises data.
+Power BI offers a set of mobile apps for iOS, Android, and Windows 10 mobile devices. In the mobile app, you connect to and interact with your cloud and on-premises data.
 
 Business users can access their data anywhere, get notifications, annotate, and share, and dive deep into their data with powerful features for decision making on the go.
 
-The screen shot below is displaying the same data from Power BI Report Server on a mobile phone.
+The screenshot below is displaying the same data from Power BI Report Server on a mobile phone.
 
 <!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/0021407b-4200-4d4c-b64f-ff26eccc9579)-->
 ![Power BI Mobile App](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/a11409f3-ef20-4db2-9cdd-6f2fe7e17271)
@@ -224,7 +224,7 @@ The screen shot below is displaying the same data from Power BI Report Server on
 
 # Paginated Report (Paginated)
 
-Normally there is enough report data that does not fit on one printed page, so the lines are split up to multiple pages (pagination). Paginated reports are pixel perfect and can be used printing or formatted for complex reporting requirements like for regulatory documentation.
+Normally there is enough report data that does not fit on one printed page, so the lines are split up to multiple pages (pagination). Paginated reports are pixel perfect and can be used for printing or formatted for complex reporting requirements like for regulatory documentation.
 
 These report types have parameters that are developed during report authoring that allow the viewer to narrow down the returned data.
 
