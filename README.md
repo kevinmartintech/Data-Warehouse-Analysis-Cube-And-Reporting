@@ -20,7 +20,8 @@ Key characteristics of an OLTP database include:
 7. **Data Validation**: TDS databases enforce data validation and integrity constraints to ensure that only valid data is stored.
 8. **Real-time Updates**: OLTP databases provide real-time updates to reflect changes in operational data as transactions occur.
 
-![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/be34bc60-6ab0-4038-afcc-54c3df407a2b)
+<!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/be34bc60-6ab0-4038-afcc-54c3df407a2b) -->
+![Transactional Data Store](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/fc4d4fe1-7bec-4caf-b72a-70632a059e72)
 
 ---
 # Operational Data Store (ODS)
