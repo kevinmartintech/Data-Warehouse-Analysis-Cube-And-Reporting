@@ -156,7 +156,7 @@ Fabric brings together experiences such as Data Engineering, Data Factory, Data 
 - A unified data lake that allows you to retain the data where it is while using your preferred analytics tools.
 - Centralized administration and governance across all experiences.
 
-![Microsoft Fabric OneLake Medallion Lakehouse Architecture](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/732a1644-4d84-42e3-9d40-ca287a51b584)
+![Microsoft Fabric OneLake Medallion Lakehouse Architecture](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/efceca68-db1c-4f12-ac1b-2beb062cd494)
 
 ---
 
