@@ -142,7 +142,7 @@ The platform is built on a foundation of Software as a Service (SaaS), which tak
 <!-- ![image](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/cf0d42b8-5fc4-4a4a-9d18-c77e41c6c51b) -->
 ![Microsoft Fabric](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/e363283a-fec8-490f-9410-0ecd238d998f)
 
-## OneLake and lakehouse - the unification of lakehouses
+## OneLake and medallion lakehouse - the unification of  lakehouses
 The Microsoft Fabric platform unifies the OneLake and lakehouse architecture across the enterprises.
 
 OneLake
@@ -155,6 +155,8 @@ Fabric brings together experiences such as Data Engineering, Data Factory, Data 
 - Developers can easily access and reuse all assets.
 - A unified data lake that allows you to retain the data where it is while using your preferred analytics tools.
 - Centralized administration and governance across all experiences.
+
+![Microsoft Fabric OneLake Medallion Lakehouse Architecture](https://github.com/kevinmartintech/Data-Warehouse-Analysis-Cube-And-Reporting/assets/45496490/732a1644-4d84-42e3-9d40-ca287a51b584)
 
 ---
 
